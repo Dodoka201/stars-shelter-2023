@@ -6,7 +6,10 @@ import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({
     imports: [
-        MongooseModule.forFeature([{ name: 'Star', schema: StarSchema }])
+        MongooseModule.forFeature([{
+            name: 'Star',
+            schema: StarSchema
+        }])
     ],
     controllers: [StarsController],
     providers: [StarService],

@@ -6,10 +6,7 @@ import { ApiTags } from '@nestjs/swagger';
 @Controller('stars')
 @ApiTags('stars')
 export class StarsController {
-    constructor(private starService: StarService)
-    {
-
-    }
+    constructor(private starService: StarService){}
 
     @Get()
     async getAll() : Promise<Star[]>{
