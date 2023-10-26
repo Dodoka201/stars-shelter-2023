@@ -1,6 +1,4 @@
-<p align="center">
-   #⭐ Stars Shelter
-</p>
+#⭐ Stars Shelter
 
 ## Descrição
 
@@ -47,6 +45,15 @@ Em seu console, escolha um diretório e execute o comando:
 $ git clone https://github.com/Dodoka201/stars-shelter-2023.git
 ```
 Após a instalação, acesse o diretório com seu IDE preferido.
+
+### Instalando Dependências
+
+Após acessar o diretório com seu IDE, você precisa instalar as dependências, o seguinte comando pode ser usado:
+```bash
+npm install
+```
+
+Assim que confirmado, podemos prosseguir para o próximo passo.
 
 ## Executando o CRUD
 Com as dependências instaladas, e o acesso de seu IDE ao diretório, utilizando o terminal, utilize o seguinte comando:
