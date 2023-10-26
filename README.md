@@ -1,22 +1,17 @@
-#⭐ Stars Shelter
+# Stars Shelter ⭐
 
 ## Descrição
-
 Stars Shelter é um projeto de avaliação para a equipe de desenvolvimento Global Hits.
 O Projeto consiste na elaboração de um CRUD (Create, Read, Update, Delete) para uma entidade utilizando o framework NestJS.
-
 A escolha do tema foi um banco de dados de possíveis atores e figurantes para serem facilmente contratados por empresas clientes interessadas.
-
 A aplicação fornece:
 * Endpoint para Cadastrar Clientes.
 * Endpoint para Listar todos os Clientes.
 * Endpoint para Consultar Clientes.
 * Endpoint para Atualizar Clientes.
 * Endpoint para Excluir Clientes.
-* Integração com um Banco de Dados não relacional (MongoDB).
-
-_O banco de dados MongoDB foi escolhido pela facilidade de implementação e ampla documentação nas extensões recomendadas pela documentação do NestJS. A hospedagem online foi escolhida por conta da facilidade e portabilidade do serviço._
-
+* Integração com um Banco de Dados não relacional (MongoDB). <br>
+  > _O banco de dados MongoDB foi escolhido pela facilidade de implementação e ampla documentação nas extensões recomendadas pela documentação do NestJS. A hospedagem online foi escolhida por conta da facilidade e portabilidade do serviço._
 A Aplicação também fornece uma camada de segurança e autenticação usando Login e Senha.
 * Endpoint para Cadastrar Usuários.
 * Endpoint para Listar todos os Usuários.
@@ -26,9 +21,9 @@ A Aplicação também fornece uma camada de segurança e autenticação usando L
 
 E para perpetuar a autenticação, a aplicação também fornece:
 * Endpoint para Efetuar Login.
-
+<br>
 Utilizando a biblioteca de autenticação @nestjs/passport. Foi implementado um método de autenticação por cadastro, recebendo um token, que pode ser usado no Header da solicitação ao acessar o banco de dados para receber os dados dos Clientes.
-
+<br>
 ## Instalação
 
 ### Primeiros Passos
@@ -39,10 +34,10 @@ Certifique-se de ter instalado as principais ferramentas para o uso:
 
 ### Método de Instalação: Git Clone
 Vamos começar clonando o repositório para um diretório local.
-
+<br>
 Em seu console, escolha um diretório e execute o comando:
 ```bash
-$ git clone https://github.com/Dodoka201/stars-shelter-2023.git
+git clone https://github.com/Dodoka201/stars-shelter-2023.git
 ```
 Após a instalação, acesse o diretório com seu IDE preferido.
 
@@ -52,7 +47,7 @@ Após acessar o diretório com seu IDE, você precisa instalar as dependências,
 ```bash
 npm install
 ```
-
+<br>
 Assim que confirmado, podemos prosseguir para o próximo passo.
 
 ## Executando o CRUD
@@ -61,8 +56,11 @@ Com as dependências instaladas, e o acesso de seu IDE ao diretório, utilizando
 ```bash
 npm run start
 ```
-Se tudo correu certo, a partir desse momento, você tem a aplicação rodando por padrão no endereço "localhost" utilizando a porta 3000 (padrão).
+Se tudo correu certo, a partir desse momento, você tem a aplicação rodando por padrão no endereço "localhost" utilizando a porta 3000 (padrão). <br>
 Você consegue acessar a aplicação a partir do endereço: http://localhost:3000/
+
+> [!NOTE]
+> Algum erro pode ocorrer caso o diretório instalado tenha nescessidade de permissões especiais de administrador, seja um diretório com muitos espaços (" ") no nome, ou um diretório extremamente longo. Em caso de problemas nessa etapa, experimente realizar a instalação em um diretório mais simples sem privilégios de acesso.
 
 ## Acessando a Documentação a partir do Swagger
 A documentação da aplicação pode ser acessada através da extensão do Swagger, para acessar é bem simples, apenas acesse a rota /api/ dentro desse mesmo endereço.
@@ -81,7 +79,7 @@ Toda área da documentação está separada em 3 Categorias:
 > A classe Stars só pode ser acessada com um Token de autenticação. É recomendado usar um gerenciador de API externo como [Postman](https://www.postman.com/) para conseguir enviar fácilmente o token de autenticação no cabeçalho da requisição.
 
 ### Usuário
-É o objeto que carrega os dados dos usuários que se cadastram e fornece o acesso para gerar o Token de autenticação nescessário para acessar o banco de dados com os dados dos clientes (Stars).
+É o objeto que carrega os dados dos usuários que se cadastram e fornece o acesso para gerar o Token de autenticação nescessário para acessar o banco de dados com os dados dos clientes (Stars). <br>
 Por fins de demonstração, o acesso aos usuários e senhas não é criptografado. A utilização da biblioteca `node.bcrypt.js` foi cogitada, porém, fugia ao escopo da demonstração.
 
 ### Autenticação
