@@ -6,10 +6,7 @@ import { Model } from 'mongoose';
 @Injectable()
 export class StarService {
     
-    constructor(@InjectModel('Star') private readonly starModel: Model<Star>){
-
-
-    }
+    constructor(@InjectModel('Star') private readonly starModel: Model<Star>){ }
 
     async create(star: Star){
         const createdStar = new this.starModel(star);
